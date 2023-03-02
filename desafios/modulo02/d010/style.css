@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-image: linear-gradient(45deg,#02735E,#038C3E,#0CF25D);
+    background-attachment: fixed;
+}
+
+.dov{
+    display: flex;
+    justify-content: center;
+}
+
+header{
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+    min-width: 150px;
+    text-align: center;
+    padding-top: 40px;
+
+
+}
+header>h1{
+    padding: 10px;
+    font-family:Impact, arial, sans-serif;
+    font-weight: normal;
+    color: white;
+    text-align: center;
+    text-shadow: 7px 7px 10px #00000033;
+    margin: 50px;
+}
+header>h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:lighter;
+    color: white;
+    text-align: center;
+    text-shadow: 7px 7px 10px #00000033;
+    margin: 40px;
+}
+main{
+    background-color: white;
+    width:auto;
+    box-shadow: 4px 4px 8px black;
+}
+article>p{
+    font-size: 1.2em;
+    text-align: justify;
+}
+article>h1{
+    font-family: 'android';
+    font-size: 2em;
+    color: #02735E;
+    margin: 56px;
+    padding: -8px;
+}
+article>h2{
+    background-image:linear-gradient(to right, #aeddf0,white);
+    font-family: 'android';
+    font-size: 1.7em;
+    color: #02735E;
+}
+ul{
+    list-style: none;
+}
+.list1{
+    display: block;
+    float: right; 
+    margin:30px;
+    background-color: #b7ecdd;
+    border-radius: 10px;
+   width: 800px;
+}
+.list2{
+    display: block; 
+    float: left;
+    margin: 30px;
+    background: #b7ecdd;
+    border-radius: 10px;
+    width: 800px;  
+}
+.main{
+    background-color: #b7ecdd;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main>h1{
+    background-image: linear-gradient(45deg,#025940,#03A64A);
+    border-radius: 5px 5px 0px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8em;
+    color: white;
+    font-weight: normal;
+}
+.main>p{
+    background-color:#b7ecdd;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    padding: 20px;
+    margin: 0px;
+    
+}
+.check{
+    list-style-type:  '\2713';
+}
+.cor{
+    color: #025940;
+    font-style: oblique;
+    font-weight: bolder;
+}
+.menu{
+    list-style: none;
+    float: left;  
+    
+}
+.menu>li{
+    position: relative;
+    float: left; 
+    
+}
+.menu>li>a{
+    color: white;
+    font-size: 1em;
+    text-decoration: none;
+    padding: 5px 10px; display: block;
+}
+.menu>li>a:hover {
+    background-color: #034159;
+    color: #ffffff;
+    box-shadow: 0 3px 10px 0#333;
+    text-shadow: 0px 0px 5px #ffffff;
+}
+.menu>li>ul{
+    position: absolute;
+    top: 25px;
+    left: 0;
+    background-color: #ffffff;
+    display: none;
+}

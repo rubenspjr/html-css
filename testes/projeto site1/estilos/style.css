@@ -1,0 +1,311 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,900&display=swap');
+@font-face {
+    font-family: 'metin';
+    src: url('../fontes/metin2.ttf') format('truetype');
+    font-weight: normal;
+}
+
+:root{
+    --cor0:#FEE8DA;
+    --cor1:#d9c6b0;
+    --cor2:#d1424e;
+    --cor3:#BF0413;
+    --cor4:#911717;
+    --cor5:#0d0d0d;
+    --font-padrao: arial, verdana, helvetica, sans-serif;
+    --font-destaque:'Roboto', helvetica;
+    --font-jogo:'metin', impact
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image: url(../imagens/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+a.links::after{
+    content:'\00a0\1f517' ;
+}
+
+header{
+    background-image: url(../imagens/header.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 150px;
+    text-align: center;
+    padding-top: 40px;  
+}
+
+header h1{
+    color: var(--cor1);
+    font-family: var(--font-jogo);
+    font-size: 3em;
+    padding-top: 50px;
+    padding-right: 60px;
+    margin-bottom: 95px;
+    margin-top: 35px;
+    text-shadow: 2px 2px 0px var(--cor5);    
+}
+
+header p{
+    font-family: var(--font-destaque);
+    text-align: center;
+    font-size: 1.5em;
+    color:var(--cor1);;
+    max-width: 700px;
+    padding-left: 251px;
+    padding-bottom: 40px;  
+    text-shadow:2px 2px 0px rgba(13, 13, 13, 0.808);
+}
+
+nav{
+    padding: 10px;
+
+}nav a{
+    background-color: var(--cor5);
+    padding: 7px;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor0);
+    transition-duration: 0.5;
+    border-radius: 7px;
+}
+
+nav a:hover{
+    background-color: var(--cor4);
+    color: var(--cor1);
+    border-radius: 7px;
+}
+
+main{
+    background-color:rgba(217, 198, 176, 0.75);
+    min-width: 300px;
+    max-width: 1000px;
+    padding: 20px;
+    margin: auto;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    margin-bottom: 20px;
+    border-bottom-left-radius: 10px ;
+    border-bottom-right-radius: 10px;
+}
+main h1{
+    font-family: var(--font-destaque);
+    color: var(--cor1);
+    font-weight: bold;
+    font-size: 2.1em;
+    background-image: linear-gradient(to right, var(--cor2),transparent);
+    border-radius: 7px 0px 0px 7px;
+    padding-left: 8px;
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.555);
+    
+
+}
+main h2{
+    font-family: var(--font-destaque);
+    color: var(--cor1);
+    font-weight: normal;
+    font-size: 1.5em;
+    background-image: linear-gradient(to right,var(--cor2),transparent);
+    border-radius: 7px 0px 0px 7px;
+    padding-left: 8px;
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.555);
+}
+
+main p{
+    text-indent: 10px;
+    margin:10px 0px;
+    text-align: justify;
+    font-size: 1.2em;
+    line-height: 1.6em;
+    
+}
+
+main article ul{
+    list-style: none;
+    list-style-position:inside;
+    list-style-type: '\2714\00a0\00a0';
+    columns: 2;
+    text-align: justify;
+    padding-block-end: 7px;   
+}
+
+main img.pq{
+    margin: auto;
+    padding-block-end: 10px;
+    display: block;
+}
+
+main strong{
+    color: var(--cor4);
+    font-family: var(--font-destaque);
+}
+
+p a:hover{
+    text-decoration: none;
+    background-color: var(--cor4);
+    color:var(--cor1);
+    border-radius: 6px;
+    padding: 4.5px;
+}
+
+aside{
+    background-color: rgba(245, 199, 147, 0.65);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: #0d0d0d57;
+    text-indent: 8px;
+}
+aside>ul>li>strong{
+    /*para simplificar era somente colocar aside strong ele buscaria
+    em todo aside desse outro jeito ele so puxa dos filhos*/
+    font-size: 1.1em;
+}
+aside>ul{
+    text-align: center;
+    font-size: 1em;
+    line-height: 1.3em;
+    list-style-position: inside;
+    list-style-type: circle;
+    
+}
+aside h1{
+    text-align: center;
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.555);
+}
+aside h3{
+    font-family: var(--font-destaque);
+    color: var(--cor1);
+    font-weight: normal;
+    text-align: center;
+    font-size: 1.7em;
+    background-image: linear-gradient(to right,var(--cor2),transparent);
+    border-radius: 7px 0px 0px 7px;
+    padding-left: 8px;
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.555);
+    
+}
+aside h4{
+    font-family: var(--font-jogo);
+    color: var(--cor1);
+    font-weight: normal;
+    text-align: center;
+    font-size: 1.7em;
+    background-image: linear-gradient(to right,var(--cor2),transparent);
+    border-radius: 7px 0px 0px 7px;
+    margin-top: 20px;
+    padding-left: 8px;
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.555);
+   
+}
+aside p {
+    text-align: justify;
+}
+
+footer{
+    background-color: var(--cor5);
+    color: var(--cor1);
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+.ajuste-shaman{
+    float: left;
+    margin-top: -44px;
+    margin-left: -9px;
+}
+.ajuste-guerreiro{
+    float: left;
+    margin-top: -9px;
+    margin-bottom: 12px;
+}
+.ajuste-ninja{
+    float: left;
+    margin-top: -44px;
+    margin-left: 10px;
+}  
+
+.ajuste-shura{
+    float: left;
+    padding: 13px;
+    margin-top: -66px;
+    margin-left: -20px;
+    margin-bottom: -33px;  
+}
+.ajuste-lycan{
+    float: left;
+    padding-top: 20px;
+}
+.block{
+        display: block;
+        margin-block-start: 9em;
+        margin-block-end: 5em;    
+}
+
+main img.pq{
+    margin: auto;
+    padding-block-end: 10px;
+    display: block;
+}
+
+.font{
+    font-family: var(--font-jogo);
+}
+.ajuste-lista{
+    font-size: 1.1em;
+    line-height: 1.3em;  
+}
+.center{
+    text-align: center;
+}
+
+.reinos{
+    list-style-type: '\2714\00a0\00a0'; 
+    columns: auto;  
+}
+.reino-azul{
+    color:rgba(51, 51, 172, 0.65);
+    font-size: 1.3em;
+    font-family: var(--font-jogo);
+    text-shadow:1px 1px 8px rgba(13, 13, 13, 0.582);
+}
+.reino-amarelo{
+    color: rgba(231, 231, 8, 0.65);
+    font-size: 1.3em;
+    font-family: var(--font-jogo);
+    text-shadow:1px 1px 8px rgba(13, 13, 13, 0.582);
+}
+.reino-vermelho{
+    color: rgba(180, 59, 59, 0.65);
+    font-size:1.3em ;
+    font-family: var(--font-jogo);
+    text-shadow:1px 1px 8px rgba(13, 13, 13, 0.582);
+}
+
+.links{
+    text-decoration: none;
+    color:var(--cor4);
+    font-weight: bolder;
+}
+
+.video{
+    background-color: var(--cor4);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 56.6%;
+    position: relative;
+}
+.video>iframe{
+    position:absolute;
+    top: 5%;
+    left:5%;
+    height: 90%;
+    width: 90%;
+}

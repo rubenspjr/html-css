@@ -1,0 +1,15 @@
+@charset "UTF-8";
+h1{
+    text-align: center;
+    color: green;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    border: 51px solid black;
+    font-size: 3em;
+    padding: 10px;
+    border-image-source: url('borda02.png');
+    border-image-slice: 47;
+    border-image-repeat: repeat;
+   
+    
+}

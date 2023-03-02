@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens Dinamicas</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes
+        ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+        <picture>
+            <source media="(max-width: 750px)" srcset="imagens/pequena-300.png" type="image/png">
+            <source media="(max-width: 1050px )" srcset="imagens/media-700.png" type="image/png">
+<img src="imagens/grande-1000.png" alt="Imagen flexivel">
+</picture>
+<h1>Reproduzindo audio</h1>
+<p>Vamos aprender a reproduzir audios em HTML5</p>
+<h2>
+     <small>Musiquinha YouTube</small>
+    </h2>
+<audio src="media/ice-fire.mp3" controls autoplay></audio>
+<!--Audio e compativel com MP3 WAV OGG-->
+<br>
+<h2><small>Guanabara Quest</small></h2>
+<audio preload="metadata" autoplay controls>
+    <source src="media/guanacast-33.mp3" type="audio/mpeg">
+    <source src="media/guanacast-33.ogg" type="ogg">
+    <source src="media/guanacast-33.wav" type="wav">
+<p>Infelimente seu navegador nao consegue reproduzir audio</p>
+<a href="media/guanacast-33.mp3"> Clique aqui para baixar o arquivo MP3</a>
+</audio> 
+
+    
+</body>
+</html>
