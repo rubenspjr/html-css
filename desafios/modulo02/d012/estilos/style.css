@@ -52,21 +52,40 @@ section{
     font-family: var(--fonte3);
     font-size: 3.5vw;
 }
+section > p{
+    scroll-padding-bottom: 2em;
+}
 section.normal{
     background-color: white;
     color: black;
 }
 
 section.imagem{
-    background-color: rgb(61, 60, 60);
+    background-color: rgba(61, 60, 60, 0.503);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.568);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 section.imagem>p{
     display: inline-block;
     padding: 5px;
-    background-color: rgb(61, 59, 59);
+    background-color: rgba(0, 0, 0, 0.503);
+    text-shadow: 1px 1px 0px black;
 
+}
+
+section#img01{
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+    
+
+}
+
+section#img02{
+    background-image: url(../imagens/background002.jpg);
+    
 }
 
 footer{
